@@ -1,0 +1,9 @@
+{% block body %}
+    <h2>Id: {{ Agence.id }}</h2>
+    <h1>Nom: {{ Agence.nom }}</h1>
+    <h1>Adresse: {{ Agence.adresse }}</h1>
+    <h1>Date de création: {{ Agence.CreatedAt|date("d/m/Y") }}</h1>
+    <h1>Nom: {{ Agence.Ville }}</h1>
+    <a href="{{ path('agenceListe') }}">Retour</a>
+    <hr>
+{% endblock %}

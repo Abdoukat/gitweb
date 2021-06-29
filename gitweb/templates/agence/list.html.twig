@@ -1,0 +1,10 @@
+{% block body %}
+{% for Agence in Agences %}
+    <a href="{{ path('showagence', {'id': Agence.id}) }}">show</a>
+    <h1>Nom: {{ Agence.nom }}</h1>
+    <h1>Adresse: {{ Agence.adresse }}</h1>
+    <h1>Date de création: {{ Agence.CreatedAt|date("d/m/Y") }}</h1>
+    <h1>Nom: {{ Agence.Ville }}</h1>
+    <hr>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ClientController!{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1>Id : {{ client.id }} </h1>
+<h1>nom : {{ client.nom }}</h1>
+<h1>prenom : {{ client.prenom }} </h1>
+<h1>Sexe : {{ client.sexe }} </h1>
+
+{{  include('client/delete.html.twig') }}<br><br>
+<a href="{{ path('client_index') }}"> <button class="btn btn-primary pull-right">Retour</button></a>
+
+</div>
+
+
+
+
+{% endblock %}
